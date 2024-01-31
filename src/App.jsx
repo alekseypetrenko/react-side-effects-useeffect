@@ -31,7 +31,6 @@ function App() {
   }, []);
 
   function handleStartRemovePlace(id) {
-    debugger;
     setModalIsOpen(true);
     selectedPlace.current = id;
   }
@@ -81,7 +80,6 @@ function App() {
           onConfirm={handleRemovePlace}
         />
       </Modal>
-
       <header>
         <img src={logoImg} alt="Stylized globe" />
         <h1>PlacePicker</h1>
